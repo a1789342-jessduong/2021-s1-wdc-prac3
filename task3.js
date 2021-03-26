@@ -8,22 +8,14 @@ function mouseOver() {
 
 //<!-- Task 3.2-->
 
-var textInput = " ";
-
 function mouseClick() {
 
 
-	var date = new Date();
+    var date = new Date();
 
-  //var post = document.getElementById("posts");
+    var time = document.getElementsByClassName("post-time")[0].innerHTML = date;
 
-  var time = document.getElementsByClassName("post-time");
-
-  var contents = document.getElementsByClassName("post-content");
-
-  textInput = textInput+date+"<br/>"+"<br/>"+contents[0].value+"<br/>"+"<br/>"+ "-------------"+"<br/>";
-
-  time[0].innerHTML = textInput;
+    var contents = document.getElementsByClassName("post-content")[0].innerHTML = document.getElementById("box").value;
 
 
 }
