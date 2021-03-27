@@ -16,9 +16,9 @@
             <button class="right">MENU</button>
             <h1>Part 3 - Javascript Playground</h1>
             <div id="mcount" onmouseover="mouseOver()"></div> <!-- Task 3.1-->
-            <div id="posts" class="post-time"></div>            <!-- Task 3.2-->
+            <div id="posts"></div>            <!-- Task 3.2-->
             <hr />
-            <textarea class="post-content" rows="4" cols="60">Type your text here...</textarea> <!-- Task 3.2-->
+            <textarea rows="4" cols="60">Type your text here...</textarea> <!-- Task 3.2-->
             <br />
             <div class="controls left">
                 <input type="number" name="quantity" value="1" /><br />
@@ -40,7 +40,7 @@
         <div id="menu" class="container" style="display:none;">
             <button class="right" onclick="clickBack">BACK</button> <!-- Task 3.3-->
             <p>&nbsp;</p>
-            <span>Background Color:</span><input type="text" onkeyup="changeColor(event)"> <!-- Task 3.5-->
+            <span>Background Color:</span><input type="text" onchange="changeColor(this)"> <!-- Task 3.5-->
         </div>
 
     </body>

@@ -8,42 +8,57 @@ function mouseOver() {
 
 //<!-- Task 3.2-->
 
-function mouseClick() {
+function clickPost() {
+    var postContainer = document.createElement("div");
+    postContainer.className = "post-container";
 
+    var postBox = document.getElementById("posts");
+    postBox.appendChild(postContainer);
 
     var date = new Date();
+    var time = document.createElement("p");
 
-    var time = document.getElementsByClassName("post-time")[0].innerHTML = date;
+        time.innerHTML = date;
 
-    var contents = document.getElementsByClassName("post-content")[0].innerHTML = document.getElementById("box").value;
+        time.style.color = "grey";
+        time.style.fontFamily = "bold";
+        time.className = "post-time";
 
+    postContainer.appendChild(time);
 
+    var content = document.createElement("p");
+    content.className = "post-content";
+    postContainer.appendChild(content);
 }
-
 //<!-- Task 3.3-->
 
-function clickMenu() {
-    var main = document.querySelector("#main");
-    main.style.display = "none";
 
-    var menu = document.querySelector("#menu");
-    menu.style.display = "";
+function clickMenu() {
+	var main = document.getElementById("main");
+  main.style.display = "none";
+
+  var menu = document.getElementById("menu");
+  menu.style.display = "inline";
 
 }
 
 function clickBack() {
-    var main = document.querySelector("#main");
-    main.style.display = "";
+	var main = document.getElementById("main");
 
-    var menu = document.querySelector("#menu");
-    menu.style.display = "none";
+  main.style.display = "inline";
+
+  var menu = document.getElementById("menu");
+
+  menu.style.display = "none";
 
 }
-
 
 //<-- Task 3.5-->
 
-function changeColor(event) {
-	document.body.style.backgroundColor = event.target.value;
+function changeColor(color) {
+
+  document.body.style.backgroundColor = color.value;
+
 }
+
 
