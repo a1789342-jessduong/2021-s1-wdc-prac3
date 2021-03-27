@@ -20,7 +20,7 @@ function mouseClick() {
 
 }
 
-//<!-- Task 3.5-->
+//<!-- Task 3.3-->
 
 function clickMenu() {
     var main = document.querySelector("#main");
