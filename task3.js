@@ -18,18 +18,22 @@ function clickPost() {
     var date = new Date();
     var time = document.createElement("p");
 
-        time.innerHTML = date;
+    time.innerHTML = date;
 
-        time.style.color = "grey";
-        time.style.fontFamily = "bold";
-        time.className = "post-time";
+    time.style.color = "grey";
+    time.style.fontFamily = "bold";
+
+    time.className = "post-time";
 
     postContainer.appendChild(time);
 
     var content = document.createElement("p");
-    content.className = "post-content";
-    postContainer.appendChild(content);
-}
+    content.innerHTML = document.getElementById("box").value;
+
+content.className = "post-content";
+postContainer.appendChild(content);
+
+      }
 //<!-- Task 3.3-->
 
 

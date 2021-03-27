@@ -46,11 +46,11 @@ hr {
 
 .post-time {
   color: grey;
-  font-style: bold;
+    font-weight: bold;
 }
 
 .post-content {
   color: black;
-  font-style: bold;
+    font-weight: bold;
 }
 
