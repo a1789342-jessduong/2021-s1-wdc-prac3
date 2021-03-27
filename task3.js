@@ -34,22 +34,22 @@ function clickPost() {
 
 
 function clickMenu() {
-	var main = document.getElementById("main");
-  main.style.display = "none";
+    var main = document.getElementById("main");
+    main.style.display = "none";
 
-  var menu = document.getElementById("menu");
-  menu.style.display = "inline";
+    var menu = document.getElementById("menu");
+    menu.style.display = "inline";
 
 }
 
 function clickBack() {
 	var main = document.getElementById("main");
 
-  main.style.display = "inline";
+    main.style.display = "inline";
 
-  var menu = document.getElementById("menu");
+    var menu = document.getElementById("menu");
 
-  menu.style.display = "none";
+    menu.style.display = "none";
 
 }
 
@@ -57,7 +57,7 @@ function clickBack() {
 
 function changeColor(color) {
 
-  document.body.style.backgroundColor = color.value;
+    document.body.style.backgroundColor = color.value;
 
 }
 
