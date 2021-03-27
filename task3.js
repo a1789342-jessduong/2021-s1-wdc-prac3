@@ -39,3 +39,11 @@ function clickBack() {
     menu.style.display = "none";
 
 }
+
+
+//<-- Task 3.5-->
+
+function changeColor(event) {
+	document.body.style.backgroundColor = event.target.value;
+}
+
