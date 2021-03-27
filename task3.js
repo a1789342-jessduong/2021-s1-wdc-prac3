@@ -19,3 +19,23 @@ function mouseClick() {
 
 
 }
+
+//<!-- Task 3.5-->
+
+function clickMenu() {
+    var main = document.querySelector("#main");
+    main.style.display = "none";
+
+    var menu = document.querySelector("#menu");
+    menu.style.display = "";
+
+}
+
+function clickBack() {
+    var main = document.querySelector("#main");
+    main.style.display = "";
+
+    var menu = document.querySelector("#menu");
+    menu.style.display = "none";
+
+}
